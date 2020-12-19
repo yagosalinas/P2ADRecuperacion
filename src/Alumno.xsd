@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Alumnos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Alumno" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name:="dni" type="dni">
+                <xs:complexText>
+                  <xs:sequence>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:pattern value="[0-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-9] [A-Z]"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:sequence>
+                </xs:complexText>
+              </xs:element>
+              <xs:element name="nombre" type="string"/>
+             <xs:element name="apellido1" type="string"/>
+              <xs:element name="apellido2" type="string"/>
+              <xs:element name:="telefono" type="telf">
+                <xs:complexText>
+                  <xs:sequence>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:integer">
+                      <xs:pattern value="[0-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-9]"/>
+                     </xs:restriction>
+                    </xs:simpleType>
+                  </xs:sequence>
+                </xs:complexText>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>  
+  </xs:element>
+</xs:schema>

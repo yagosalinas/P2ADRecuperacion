@@ -1,0 +1,8 @@
+<!ELEMENT modulos(modulo*)>
+<!ELEMENT modulo (id*,nombre*,curso*,ciclo*,horas*)>
+
+<!ATTLIST modulo id CDATA #REQUERID>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>
+<!ELEMENT ciclo (#PCDATA)>
+<!ELEMENT horas (#PCDATA)>

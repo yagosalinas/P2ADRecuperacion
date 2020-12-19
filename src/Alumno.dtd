@@ -1,0 +1,8 @@
+<!DOCTYPE alumno >
+<!ELEMENT alumno (nombre,apellido1,apellido2,telefono,dni,modulo)>
+
+<!ATTLIST registro dni CDATA #REQUERID>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido1 (#PCDATA)>
+<!ELEMENT apellido2 (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>

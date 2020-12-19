@@ -1,0 +1,10 @@
+<!ELEMENT cursan(cursa*)>
+<!ELEMENT cursa (anho,nota*)>
+
+<!ELEMENT anho (#PCDATA)>
+<!ELEMENT nota (#PCDATA)>
+
+
+
+
+  
